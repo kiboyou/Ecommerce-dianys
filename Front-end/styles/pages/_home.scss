@@ -1,0 +1,112 @@
+.home {
+    background: $white-2;
+
+    .home-section {
+        margin-top: 30px;
+
+        &.solde {
+            margin: 100px 0;
+
+            @media screen and (max-width: 480px) {
+                width: 93%;
+                margin: 0 auto;
+            }
+
+            h2 {
+                margin-bottom: -10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 93%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: $black-1;
+            font-size: 48px;
+            margin: 0;
+
+            @media screen and (max-width: 780px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 30px;
+            }
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 400;
+            width: 55%;
+            margin: 15px auto;
+            color: #71717a;
+
+            @media screen and (max-width: 780px) {
+                width: 70%;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 1rem;
+                width: 100%;
+            }
+        }
+
+        .news-content {
+            width: 62%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            @media screen and (max-width: 1670px) {
+                width: 65%;
+            }
+
+            @media screen and (max-width: 1207px) {
+                width: 75%;
+            }
+
+            @media screen and (max-width: 981px) {
+                width: 85%;
+            }
+
+            @media screen and (max-width: 917px) {
+                width: 90%;
+            }
+
+            @media screen and (max-width: 876px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 780px) {
+                width: 75%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 656px) {
+                grid-template-columns: 1fr;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 480px) {
+                grid-template-columns: 1fr;
+                width: 80%;
+            }
+
+            @media screen and (max-width: 400px) {
+
+                width: 100%;
+            }
+        }
+
+        button {
+            background: $black-1;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}

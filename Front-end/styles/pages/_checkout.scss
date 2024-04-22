@@ -1,0 +1,276 @@
+.checkout {
+    background: $white;
+    min-height: 100vh;
+    color: $black-1;
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 100px;
+    }
+
+    .checkout-content {
+        margin: 0 auto;
+        width: 57%;
+        margin-top: 40px;
+
+        @media screen and (max-width: 1675px) {
+            width: 65%;
+        }
+
+        @media screen and (max-width: 1500px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 1370px) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: 1280px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 93%;
+        }
+
+    }
+
+    h3 {
+        color: $black-1;
+        font-weight: 650;
+    }
+
+    a {
+        color: $black-1;
+    }
+
+    .back {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+            border: 1px solid $gray-2;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            @include flex-center;
+
+            svg {
+                font-size: 1.2rem;
+            }
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+
+    .delivery-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media screen and (max-width: 1200px) {
+            display: block;
+        }
+
+        .content {
+            border: 1px solid $gray-2;
+            background: $white-2;
+            width: 100%;
+            padding: 30px 25px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            max-height: 600px;
+
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 50px;
+            }
+
+            h4 {
+                margin-top: 5px;
+                font-weight: 600;
+            }
+
+            .item {
+                display: flex;
+                width: 100%;
+                margin: 20px 0;
+                gap: 20px;
+
+                .phone-input {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                .mantine-TextInput-root {
+                    width: 100%;
+                }
+
+                input {
+                    width: 100%;
+                    border: 1px solid $gray-2;
+                }
+
+                label {
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    font-size: 0.9rem;
+                }
+
+                .phone-input {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .summary {
+            background: $white-2;
+            border: 1px solid $gray-2;
+            width: 450px;
+            padding: 0 25px;
+            border-radius: 10px;
+
+            @media screen and (max-width: 1200px) {
+                margin-top: 50px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: auto;
+            }
+
+            h3 {
+                margin-left: 2.5%;
+
+            }
+
+            .diviser {
+                height: 1px;
+                width: 100%;
+                margin: 0 auto;
+                background: $gray-2;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    display: flex;
+                    gap: 10px;
+                    margin: 10px 0;
+
+                    .left {
+                        img {
+                            width: 70px;
+                            height: 80px;
+                            object-fit: cover;
+                            border: 1px solid rgba(128, 128, 128, 0.329);
+                            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0) 0px 0px 0px 1px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .right {
+                        width: 100%;
+
+                        .top {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            h5 {
+                                margin: 0;
+                                margin-top: -5px;
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        .choices {
+                            gap: 30px;
+
+                            span {
+                                font-size: 0.8rem;
+                                font-weight: bold;
+                                color: #666666;
+                                font-weight: 500;
+                                display: block;
+
+                                p {
+                                    display: inline;
+                                }
+                            }
+                        }
+
+                        .qty {
+                            margin: 0;
+                            font-size: 0.8rem;
+                            color: #666666;
+                            font-weight: 500;
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+            }
+
+            .total {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 600;
+            }
+
+            button {
+                margin: 25px 0;
+                width: 100%;
+                background: $black-1;
+            }
+        }
+    }
+
+    .choose-payement-option {
+        margin-top: 30px;
+
+        h3 {
+            margin: 0;
+        }
+
+        .option {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $gray-2;
+            margin: 15px 0;
+            background: $white-2;
+            padding: 10px 7px;
+            border-radius: 10px;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &.checked {
+                border: 1px solid $black-1;
+            }
+
+            .mantine-Radio-label {
+                font-weight: 600;
+                font-family: $font-2
+            }
+
+            .icon {
+                @include flex-center;
+                padding: 3px 7px;
+                border: 1px solid $gray-2;
+                border-radius: 5px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,81 @@
+.footer {
+    padding: 32px;
+    border-top: 1px solid $gray-2;
+    margin-top: 100px;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1024px) {
+            width: 85%;
+        }
+
+        @media screen and (max-width: 861px) {
+            width: 95%;
+        }
+
+        @media screen and (max-width: 780px) {
+            display: block;
+            width: 100%;
+        }
+
+        .logo {
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+
+
+        div {
+            margin: 0;
+
+            h3 {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    font-size: 1rem;
+                    padding: 5px 0;
+                    cursor: pointer;
+
+                    color: #09090b;
+                    opacity: 70%;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .follow-us {
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    span {
+                        background: rgba(119, 119, 119, 0.692);
+                        color: $white;
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                        @include flex-center;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

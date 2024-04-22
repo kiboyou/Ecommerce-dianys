@@ -1,0 +1,74 @@
+$black-1: #202020;
+$white-1: #F4F4F4;
+$white-2: #FBFAFA;
+$orange-1: rgba(255, 166, 0, 0.637);
+$orange: #F8982D;
+$white: #FFFFFF;
+$gray: rgb(119, 119, 119);
+$gray-2: rgba(128, 128, 128, 0.271);
+$green:#2A977D;
+
+
+// Fons 
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Lora-Italic-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/fonts/Inter-VariableFont_slnt-wght.ttf);
+}
+
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+// @font-face {
+//     font-family: "font-3";
+//     src: url(../assets/fonts/Inter-VariableFont_slnt-wght   );
+// }
+
+$font-1: "font-1",
+sans-serif;
+
+
+$font-2: "font-2",
+sans-serif;
+
+$font-3: "font-3",
+sans-serif;
+
+// $font-3: "font-3",
+// sans-serif;
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: $font-2;
+    letter-spacing: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: $white;
+}
+
+// Mixin 
+@mixin x-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

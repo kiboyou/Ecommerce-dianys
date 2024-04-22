@@ -1,0 +1,5 @@
+# BACK
+env/
+.env
+.config_db
+db.sqlite3

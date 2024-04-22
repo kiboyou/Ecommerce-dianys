@@ -1,0 +1,220 @@
+.product-infos {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.237);
+    padding: 30px;
+    width: 40%;
+    min-height: 100%;
+    flex-shrink: 0;
+    @include x-center;
+
+    @media screen and (max-width: 1017px) {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+    }
+
+    .infos-content {
+        width: 100%;
+
+        .description {
+
+            h5 {
+                font-size: 1.1rem;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0;
+
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid $gray-2;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-top: 30px;
+            position: relative;
+
+            p {
+                color: $green;
+                font-size: 0.9rem;
+            }
+
+            span {
+                font-weight: 600;
+                color: $orange;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: 100%;
+                background-color: rgba(128, 128, 128, 0.2);
+                bottom: -40px;
+                left: 0;
+            }
+
+        }
+
+        .size-container {
+            margin-top: 60px;
+
+            h5 {
+                color: $black-1;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+            ul {
+                display: flex;
+                gap: 10px;
+                padding: 0;
+
+                li {
+                    input[type="radio"] {
+                        display: none;
+
+                        &:checked~label {
+                            background: $green;
+                            color: $white-1;
+                            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                        }
+                    }
+
+                }
+
+                label {
+                    cursor: pointer;
+                    border: 1px solid $gray-2;
+                    padding: 10px;
+                    border-radius: 7px;
+                    transition: 0.2 ease-in;
+                }
+            }
+        }
+
+        .color {
+            margin-top: 30px;
+            position: relative;
+
+            h5 {
+                color: $black-1;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+            ul {
+                display: flex;
+                padding: 0;
+                gap: 20px;
+
+                li {
+                    img {
+                        object-fit: cover;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        padding: 1px;
+
+                        @media screen and (max-width: 550px) {
+                            width: 100%;
+                        }
+
+                        width: 50px;
+                        height: auto;
+
+                        &.active {
+                            border: 2px solid $black-1;
+                        }
+
+                        &:hover {
+                            border: 2px solid $black-1;
+                        }
+                    }
+
+                }
+
+                label {
+                    cursor: pointer;
+                    position: relative;
+                    border: 1px solid $gray-2;
+                    display: block;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50px;
+                    transition: 0.2s;
+
+                }
+            }
+
+        }
+
+        .btn-container {
+
+            text-align: center;
+            margin-top: 60px;
+            // @include x-center;
+
+            .quantity {
+                width: 100px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                @include flex-center;
+                margin: 0 5px;
+
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+
+                    span {
+                        @include flex-center;
+                    }
+
+                    button {
+                        border: none;
+                        background: none;
+                        height: 100%;
+                        padding: 0;
+                    }
+                }
+            }
+
+
+            button {
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 7.4px 0;
+                font-weight: 500;
+
+            }
+
+
+            .add-to-bag {
+                border: none;
+                width: 100%;
+                background: $black-1;
+                font-size: 1rem;
+                height: 40px;
+
+
+                &.what-btn {
+                    background: #25d366;
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,200 @@
+.register {
+    padding-top: 40px;
+    background: $white-1;
+    min-height: 100vh;
+    padding-bottom: 100px;
+
+    &.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        padding: 20px;
+        background: $white;
+        width: 25%;
+        margin: 0 auto;
+        border-radius: 15px;
+        margin-top: 100px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+        @media screen and (max-width: 1818px) {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 1475px) {
+            width: 35%;
+        }
+
+        @media screen and (max-width: 1261px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 1098px) {
+            width: 45%;
+        }
+
+        @media screen and (max-width: 990px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 885px) {
+            width: 55%;
+        }
+
+        @media screen and (max-width: 806px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 738px) {
+            width: 65%;
+        }
+
+        @media screen and (max-width: 562px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 506px) {
+            width: 85%;
+        }
+
+        @media screen and (max-width: 430px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 90%;
+        }
+    }
+
+
+    .logo {
+        @include x-center;
+    }
+
+    form {
+        margin: 0 auto;
+        background: $white;
+        font-family: $font-2;
+
+        .form-item {
+            margin: 20px 0;
+
+            .error {
+                display: flex;
+                align-items: center;
+                margin-top: 7px;
+                gap: 5px;
+
+                p {
+                    margin: 0;
+                    font-size: 12.8px;
+                    color: #D31225;
+                }
+
+                span {
+                    margin-top: 2px;
+
+                    svg {
+                        font-size: 1.3rem;
+                        color: #D31225;
+                    }
+                }
+            }
+        }
+
+        input {
+            height: 45px;
+
+            &:focus {
+                border: 1px solid black;
+                outline: none;
+            }
+
+            &.input_error {
+                border-color: red !important;
+            }
+
+            &::placeholder {
+                font-family: $font-2;
+            }
+
+            svg {
+                cursor: pointer;
+            }
+        }
+
+        label {
+            margin-bottom: 7px;
+            font-family: $font-2;
+            font-weight: 550;
+            font-family: $font-2;
+        }
+
+        button[type="submit"] {
+            background: $orange;
+            font-family: $font-2;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+
+            p {
+                text-align: center;
+                align-items: center;
+                font-size: 14px;
+
+                &.restore-mdp {
+                    transition: 0.1 s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                a {
+                    color: $orange;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .register-bottom {
+            text-align: center;
+            font-size: 0.9rem;
+
+            a {
+                color: $orange;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mantine-PasswordInput-visibilityToggle {
+    &:focus {
+        border-color: red;
+    }
+}
+
+.mantine-dkqynn {
+    height: 45px;
+    transition: 0.2s;
+
+    &:focus {
+        outline: none;
+        border-color: red !important;
+        font-family: $font-2;
+        border-width: 2px;
+    }
+}

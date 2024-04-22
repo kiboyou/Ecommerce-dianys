@@ -1,0 +1,267 @@
+.admin-dashboard {
+    // background: $white-2;
+
+    .content {
+        display: flex;
+        min-height: 100vh;
+        max-height: 100vh;
+
+
+
+        .sidebar {
+            background: $black-1;
+            position: fixed;
+            height: 100vh;
+            color: white;
+            width: 20%;
+            padding-right: 20%;
+            padding: 20px 30px;
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+
+
+
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            ul {
+                padding: 0;
+                margin-top: 60px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    margin: 12px 0;
+                    padding: 8px 15px;
+                    margin-left: -15px;
+                    border-radius: 10px;
+                    transition: 0.1s;
+
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.63);
+
+                    }
+
+
+                    span {
+                        @include flex-center;
+
+                        svg {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    li {
+                        font-weight: 280;
+                        // margin-top: -4px;
+                        font-family: $font-3;
+                    }
+                }
+            }
+        }
+
+        main {
+            width: 100%;
+            margin-left: 20%;
+
+            @media screen and (max-width: 1200px) {
+                margin: 0;
+            }
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $gray-2;
+                padding: 15px 30px;
+
+                @media screen and (max-width: 621px) {
+                    padding: 15px 5px;
+                }
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .search {
+                    input {
+                        width: 350px;
+                        border-radius: 10px;
+                        background: rgba(210, 210, 253, 0.404);
+                        border: none;
+                    }
+
+                    @media screen and (max-width: 621px) {
+                        display: none;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    span {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50px;
+                        @include flex-center;
+                        border: 1px solid $gray-2;
+                        position: relative;
+                        cursor: pointer;
+
+
+                        p {
+                            position: absolute;
+                            background: $orange;
+                            height: 20px;
+                            width: 20px;
+                            display: block;
+                            padding: 5px;
+                            border-radius: 50px;
+                            top: -22px;
+                            right: -10px;
+                            @include flex-center;
+                            font-size: 0.8rem;
+                            padding: 4px;
+                            font-family: $font-3;
+                            color: white;
+                        }
+
+                        svg {
+                            color: gray;
+                        }
+                    }
+
+                    .user {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50px;
+                        @include flex-center;
+
+                    }
+
+                }
+            }
+
+            h2 {
+                font-family: $font-3;
+                font-weight: 500;
+                padding-left: 30px;
+            }
+
+            .body {
+                padding: 0 30px;
+
+                .nav {
+                    ul {
+                        padding: 0;
+                        display: flex;
+                        gap: 30px;
+
+
+                        li {
+                            color: $black-1;
+                            font-family: $font-3;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $orange;
+                            }
+
+                            &.active {
+                                color: $orange;
+                                border-bottom: 2px solid $orange;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.sidebar-mobile {
+    background: $black-1;
+    position: relative;
+    // height: 100vh;
+    color: white;
+    // width: 20%;
+    padding-right: 20%;
+    padding: 20px 30px;
+    width: 100%;
+
+
+    .close {
+        right: 10px;
+        position: absolute;
+        top: -5px;
+        cursor: pointer;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 60px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+            padding: 8px 15px;
+            margin-left: -15px;
+            border-radius: 10px;
+            transition: 0.1s;
+
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.63);
+
+            }
+
+
+            span {
+                @include flex-center;
+
+                svg {
+                    font-size: 1.3rem;
+                }
+            }
+
+            li {
+                font-weight: 280;
+                // margin-top: -4px;
+                font-family: $font-3;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+version: '3'
+services:
+  # creation of database
+  db_dianys:
+    image: postgres:latest
+    container_name: db_dianys
+
+    #include the file with the environment variables 
+    env_file: backendApi/config_db/.config_db
+    ports:
+      - "5435:5432"
+    networks:
+      - dianys_network
+
+  # creation of container project
+  backend_dianys:
+    build:
+      context: ./backendApi
+    ports:
+      - "8002:8000"
+    depends_on:
+      - db_dianys
+    networks:
+      - dianys_network
+
+  # creation of container project
+  front_dianys:
+    build:
+      context: ./Front-end
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend_dianys
+    networks:
+      - dianys_network
+
+# networking configuration
+# the two contenairs will be in the same network
+networks:
+  dianys_network:
+    driver: bridge

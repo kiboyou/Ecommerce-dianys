@@ -1,0 +1,168 @@
+.cart-page {
+    min-height: 100%;
+    background: $white-2;
+
+    .cart-title {
+        // width: 70%;
+        display: block;
+        margin: 40px auto 0;
+        color: $black-1;
+    }
+
+    .cart-container {
+        width: 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1670px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 1458px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 1300px) {
+            width: 95%;
+        }
+
+        @media screen and (max-width: 480px) {
+            display: block;
+            width: 93%;
+        }
+
+        @media screen and (max-width: 1158px) {
+            grid-template-columns: 68% 30%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 58% 40%;
+        }
+
+        @media screen and (max-width: 780px) {
+            display: block;
+        }
+
+        section {
+            background: none;
+
+            display: grid;
+            min-height: 50vh;
+            margin-bottom: 100px;
+            grid-template-columns: 73% 25%;
+            gap: 2%;
+
+
+            @media screen and (max-width: 1000px) {
+                display: block;
+            }
+
+            ul {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            .summary {
+                color: $black-1;
+                background: $white-1;
+                height: 160px;
+                padding: 15px;
+                border-radius: 5px;
+                margin-top: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+                h3 {
+                    font-size: 0.7;
+                    margin: 0;
+                    font-weight: 600;
+                }
+
+                .total {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    margin: 10px 0;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        height: 0.7px;
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.201);
+                        bottom: -10px;
+                        transform: translateX(-50%);
+                        left: 50%;
+                    }
+                }
+
+                .total-price {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: $orange;
+                    margin-top: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            .btn-container {
+
+                .order-button {
+                    width: 100%;
+                    margin-top: 20px;
+                    background: $orange;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    height: 40px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+                    &.what-btn {
+                        background: #25d366;
+
+                        svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.empty-cart {
+    .empty-content {
+        text-align: center;
+    }
+
+    h6 {
+        font-weight: 580;
+        color: $black-1;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        background: $orange;
+        color: white;
+        height: 45px;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+
+        &:active {
+            background: $orange;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 0.8rem;
+            height: 35px;
+        }
+    }
+}

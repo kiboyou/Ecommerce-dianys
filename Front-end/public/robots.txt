@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+Disallow: /admin/
+
+
+# Host
+Host: https://dianys-boutique.com
+
+# Sitemaps
+Sitemap: https://dianys-boutique.com/sitemap.xml

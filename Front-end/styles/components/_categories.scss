@@ -1,0 +1,132 @@
+.categories {
+    margin-top: 70px;
+
+    @media screen and (max-width: 480px) {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    // @media screen and (max-width: 400px) {
+    //     width: 90%;
+    // }
+
+    h2 {
+        text-align: center;
+        color: $black-1;
+        font-size: 48px;
+        margin: 0;
+        margin-bottom: -20px;
+
+        @media screen and (max-width: 780px) {
+            font-size: 30px;
+        }
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #71717a;
+
+        @media screen and (max-width: 740px) {
+            width: 70%;
+            margin: 15px auto;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 60%;
+            margin: 15px auto;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 471px) {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        @media screen and (max-width: 338px) {
+            width: 90%;
+        }
+
+    }
+
+    .content {
+        display: grid;
+        // grid-template-columns: 1fr 1fr;
+        grid-template-columns: 49.5% 49.5%;
+        gap: 1%;
+        width: 62%;
+
+        margin: 0 auto;
+        margin-bottom: 100px;
+        // gap: 10px;
+
+        @media screen and (max-width: 1670px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 1458px) {
+            width: 95%;
+        }
+
+
+
+        @media screen and (max-width: 804px) {
+            width: 95%;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: block;
+            // width: 70%;
+        }
+
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .bg-img {
+
+            // min-width: 100%;
+            border-radius: 7px;
+            max-width: 100%;
+
+            height: auto;
+            min-height: 100%;
+            // object-fit: cover;
+            transition: 0.3s;
+
+            margin: 0;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+
+
+
+
+
+        .category-item {
+
+            height: 200px;
+            width: 150px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.image-container {
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.237);
+    width: 45%;
+    height: 750px;
+    @include flex-center;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1053px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 950px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        height: 750px;
+    }
+
+    @media screen and (max-width: 440px) {
+
+        height: 600px;
+    }
+
+
+    @media screen and (max-width: 360px) {
+        height: 500px;
+    }
+
+    .product-imgs {
+        width: 400px;
+        object-fit: cover;
+
+        @media screen and (max-width: 480px) {
+            // height: auto;
+
+            width: 350px;
+        }
+
+        @media screen and (max-width: 441px) {
+            width: 300px;
+        }
+
+        @media screen and (max-width: 360px) {
+            width: 250px;
+        }
+
+        .product-images-slider {
+            .swiper-slide {
+                padding-top: 150%;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            .swiper-button-prev {
+                left: 0;
+                color: $black-1;
+                height: 45px;
+                width: 45px;
+
+                &::after {
+                    font-size: 1rem;
+                }
+            }
+
+            .swiper-button-next {
+                right: 0;
+                color: $black-1;
+
+                &::after {
+                    font-size: 1rem;
+                }
+
+            }
+        }
+
+        .product-images-slider-thumbs {
+            margin-top: 10px;
+
+            .swiper-slide {
+                cursor: pointer;
+            }
+
+            &-wrapper {
+                width: 100%;
+                padding-top: 100%;
+                overflow: hidden;
+                position: relative;
+                opacity: 0.6;
+                transition: 0.2s;
+
+                &.active-thumb {
+                    opacity: 1;
+                    border: 1px solid $gray-2;
+                    border-radius: 4px;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

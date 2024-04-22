@@ -1,0 +1,26 @@
+const commune = [
+  "Abobo",
+  "Adjame",
+  "Attecoube",
+  "Agboville",
+  "Anyama",
+  "Bingerville",
+  "Bouake",
+  "Cocody",
+  "Dabou",
+  "Daloa",
+  "Grand-Bassam",
+  "Jacqueville",
+  "Koumassi",
+  "Korhogo",
+  "Marcory",
+  "Songon",
+  "Plateau",
+  "Port bouet",
+  "San pedro",
+  "Treichville",
+  "Yamoussoukro",
+  "Yopougon",
+];
+
+export default commune;

@@ -1,0 +1,4 @@
+.config_db.example
+db.sqlite3
+env/
+.env.example

@@ -1,0 +1,192 @@
+.quill {
+    background: white;
+}
+
+.add-product {
+    padding-bottom: 50px;
+}
+
+.add-back {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    margin-left: 25%;
+
+    @media screen and (max-width: 1000px) {
+        margin-left: 5%;
+    }
+
+    .icon {
+        border: 1px solid $gray-2;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        @include flex-center;
+
+        svg {
+            font-size: 1.2rem;
+        }
+    }
+
+    p {
+        font-weight: 500;
+    }
+}
+
+.add-prod {
+    padding: 30px;
+    padding-top: 0;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid $gray-2;
+    border-radius: 10px;
+    background: $white-2;
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
+
+    &.edit {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+
+
+    h3 {
+        font-family: $font-3;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    // background: $white;
+    font-family: $font-3;
+
+    .form-item {
+        margin: 20px 0;
+
+        h3 {
+            font-size: 1rem;
+            font-family: $font-3;
+            font-weight: 500;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        input {
+            font-family: $font-3;
+
+            &::placeholder {
+                font-family: $font-3;
+            }
+        }
+
+
+        &.checkbox-container {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            font-family: $font-3;
+        }
+
+
+    }
+
+    .add-btn {
+        background: $black-1;
+        width: 200px;
+    }
+
+    .dropzone-container {
+        // font-family: $m-medium;
+        margin-bottom: 20px;
+        background: none;
+
+        .dropzone {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: $gray-2;
+            border-style: dashed;
+            background-color: white;
+            color: #bdbdbd;
+            outline: none;
+            transition: border .24s ease-in-out;
+
+            .drop-text {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .icon {
+                    svg {
+                        font-size: 3rem;
+                    }
+                }
+
+                .info {
+                    font-size: 0.9rem;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .thumbs-container {
+            display: flex;
+            direction: row;
+            margin-top: 16px;
+
+            .thumb {
+                display: inline-flex;
+                border-radius: 5px;
+                border: 1px solid $gray-2;
+                margin-bottom: 8px;
+                margin-right: 8px;
+                // width: 100%;
+                height: 100px;
+                padding: 4px;
+                box-sizing: border-box;
+
+                .thumb-inner {
+                    display: flex;
+                    min-width: 0;
+                    overflow: hidden;
+
+
+                    .img {
+                        display: block;
+                        width: auto;
+                        height: 100%;
+
+                    }
+                }
+            }
+        }
+
+        .accepted-file {
+            background: white;
+        }
+
+        aside {
+            margin-top: 10px;
+            background: white;
+        }
+    }
+
+}

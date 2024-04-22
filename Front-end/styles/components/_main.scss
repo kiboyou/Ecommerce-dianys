@@ -1,0 +1,181 @@
+.main {
+    margin-top: 20px;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        width: 70%;
+        height: auto;
+
+        @media screen and (max-width: 1670px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 1458px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 1300px) {
+
+            width: 95%;
+        }
+
+        // @media screen and (max-width: 1670px) {
+        //     width: 65%;
+        // }
+
+        // @media screen and (max-width: 1207px) {
+        //     width: 75%;
+        // }
+
+        // @media screen and (max-width: 981px) {
+        //     width: 85%;
+        // }
+
+
+        // @media screen and (max-width: 804px) {
+        //     width: 90%;
+        // }
+    }
+
+    .header {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: 65% 35%;
+        margin-top: 125px;
+        color: $white;
+
+        @media screen and (max-width: 1464px) {
+            width: 85%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 890px) {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+            margin-top: 30px;
+            width: 90%;
+        }
+
+        .header-right {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            @media screen and (max-width: 890px) {
+                margin-top: 100px;
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+
+            .img-container {
+                height: 400px;
+                width: 300px;
+                // background: $orange-1;
+                @include x-center;
+                position: relative;
+                border-top-left-radius: 120px;
+                border-top-right-radius: 120px;
+
+                @media screen and (max-width: 385px) {
+                    width: 250px;
+                }
+
+                @media screen and (max-width: 359px) {
+                    width: 230px;
+                }
+
+                img {
+                    height: 500px;
+                    width: auto;
+                    position: absolute;
+                    top: -100px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+                    @media screen and (max-width: 359px) {}
+
+                }
+            }
+        }
+
+        .header-left {
+            h1 {
+                font-size: 3.4rem;
+                font-family: $font-1;
+                font-weight: 500;
+                font-style: normal;
+                margin: 20px 0;
+
+                @media screen and (max-width: 1210px) {
+                    font-size: 2.5rem;
+                }
+
+                @media screen and (max-width: 507px) {
+                    font-size: 30px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 25px;
+                }
+
+                span {
+                    color: $orange;
+                    font-family: $font-1;
+                }
+            }
+
+            button {
+                background: $orange;
+                font-family: $font-2;
+                font-weight: normal;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 2px;
+                font-size: 1rem;
+
+                @media screen and (max-width: 480px) {
+                    display: block;
+                    width: 60%;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 0.8rem;
+                    width: auto;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.swiper {
+
+    // .swiper-wrapper {
+    //     padding-bottom: 55px;
+    // }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+
+        .swiper-pagination-bullet {
+            background: $orange;
+            // width: 18px;
+        }
+    }
+}
